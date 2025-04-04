@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>4MB Game Jam</title>
         <link rel="stylesheet" href="assets/styles/index.css">
@@ -38,5 +38,42 @@
             <a href="#">Register</a>
             <a href="#">Learn More</a>
         </header>
+
+        <main>
+            <section>
+                <header>
+                    <h2>Rules</h2>
+                </header>
+            </section>
+            <section>
+                <header>
+                    <h2>Resources</h2>
+                </header>
+            </section>
+            <section>
+                <header>
+                    <h2>Community</h2>
+                </header>
+            </section>
+        </main>
+
+        <aside>
+            <nav>
+                <header>
+                <ul>
+                    <li>
+                        <a href="#">Rules</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Resources</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Community</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
     </body>
 </html>
