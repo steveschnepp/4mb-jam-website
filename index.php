@@ -85,20 +85,28 @@
 
             <section>
                 <header>
-                    <h2>Resources</h2>
+                    <h2 id="resources">Resources</h2>
                 </header>
+
+                <p>Check out the <a href="resources">Resources</a> section for guidance on ways of making games that take up as little storage space as possible!</p>
             </section>
 
             <section>
                 <header>
-                    <h2>Community</h2>
+                    <h2 id="community">Community</h2>
                 </header>
+
+                <ul>
+                    <li><a href="https://discord.gg/ge3YuJheBY">Discord</a></li>
+                    <li><a href="https://mastodon.social/@4mbjam">Mastodon</a></li>
+                </ul>
             </section>
         </main>
 
         <aside>
             <nav>
                 <header>
+                    <a href="#">Register</a>
                     <h2>Contents</h2>
                 </header>
 
