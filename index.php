@@ -42,7 +42,9 @@
         <main>
             <section>
                 <header>
-                    <h2 id="rules">Rules</h2>
+                    <h2 id="rules">
+                        <a href="#rules">Rules</a>
+                    </h2>
                 </header>
 
                 <p>You can submit a Ubuntu or Windows desktop (x64) application which adheres to the following conditions:</p>
@@ -85,7 +87,9 @@
 
             <section>
                 <header>
-                    <h2 id="resources">Resources</h2>
+                    <h2 id="resources">
+                        <a href="#resources">Resources</a>
+                    </h2>
                 </header>
 
                 <p>Check out the <a href="#">Resources</a> section for guidance on ways of making games that take up as little storage space as possible!</p>
@@ -93,7 +97,9 @@
 
             <section>
                 <header>
-                    <h2 id="community">Community</h2>
+                    <h2 id="community">
+                        <a href="#community">Community</a>
+                    </h2>
                 </header>
 
                 <ul>
