@@ -60,6 +60,9 @@
         <aside>
             <nav>
                 <header>
+                    <h2>Contents</h2>
+                </header>
+
                 <ul>
                     <li>
                         <a href="#">Rules</a>
