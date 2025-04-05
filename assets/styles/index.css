@@ -1,25 +1,24 @@
-:root {
-    --main-background-color: black;
-    --main-foreground-color: white;
-
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-}
-
-@supports (font-variation-settings: normal) {
-    :root { font-family: InterVariable, sans-serif; }
-}
-
-/* TODO:
+/* Structure:
  *
- * - [X] Fonts
- * - [] General styles
- * - [] Utilities
- * - [] Sitewide e.g. styling for specific elements that will be used across the site
- * - [] Sections for each specific things used in the site (Context, page, component etc.)
+ * Styling uses a "desktop-first" approach: Focus on the full site experience then
+ * scale down the experience as the viewport gradually gets shorter
+ *
+ * - Fonts
+ * - Root definitions and styles
+ * - General styles
+ * - Utilities
+ * - Sitewide e.g. styling for specific elements that will be used across the site
+ * - Sections for each specific things used in the site (Context, page, component etc.)
  */
 
-/* || Fonts */
+/* Notes
+ *
+ * - Assume 1rem = 16px
+ *
+ */
+
+
+/* || FONTS */
 
 @font-face {
     font-family: InterVariable;
@@ -60,6 +59,22 @@
     }
 }
 
+/* || ROOT */
+
+:root {
+    --main-background-color: black;
+    --main-foreground-color: white;
+    --font-weight-medium: 500;
+
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+}
+
+
 /* || GENERAL STYLES */
 
 *,
@@ -77,16 +92,42 @@ body {
 
 a {
     color: var(--main-foreground-color);
+    text-decoration: none;
 }
 
 
-/* || Utilities */
+/* || UTILITIES */
 
 .fill-viewport {
     width: 100%;
     height: 100dvh;
 }
 
+/* || SITEWIDE */
+#top-nav {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    font-weight: var(--font-weight-medium);
+    font-size: 2rem;
+    letter-spacing: -0.08rem;
+}
 
+#top-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
 
+#top-nav ul li:not(:first-child) {
+    margin-left: 1.5rem;
+}
+
+#top-nav ul li {
+    list-style-type: none;
+}
 

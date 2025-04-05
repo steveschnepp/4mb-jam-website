@@ -1,4 +1,4 @@
-<nav>
+<nav id="top-nav">
     <ul>
         <li>
             <a href="#">About Us</a>
