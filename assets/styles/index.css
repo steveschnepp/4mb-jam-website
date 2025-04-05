@@ -72,6 +72,7 @@
 body {
     background-color: var(--main-background-color);
     color: var(--main-foreground-color);
+    margin: 0;
 }
 
 a {
@@ -82,7 +83,7 @@ a {
 /* || Utilities */
 
 .fill-viewport {
-    width: 100dvw;
+    width: 100%;
     height: 100dvh;
 }
 
