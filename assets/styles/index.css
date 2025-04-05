@@ -12,14 +12,15 @@
 
 /* TODO:
  *
- * - [] Fonts
- * - [] General styles - Content Tags
+ * - [X] Fonts
+ * - [] General styles
  * - [] Utilities
  * - [] Sitewide e.g. styling for specific elements that will be used across the site
  * - [] Sections for each specific things used in the site (Context, page, component etc.)
  */
 
 /* || Fonts */
+
 @font-face {
     font-family: InterVariable;
     font-style: normal;
@@ -59,6 +60,15 @@
     }
 }
 
+/* || GENERAL STYLES */
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
 body {
     background-color: var(--main-background-color);
     color: var(--main-foreground-color);
@@ -67,6 +77,15 @@ body {
 a {
     color: var(--main-foreground-color);
 }
+
+
+/* || Utilities */
+
+.fill-viewport {
+    width: 100dvw;
+    height: 100dvh;
+}
+
 
 
 

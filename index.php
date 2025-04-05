@@ -67,7 +67,7 @@
 <?php include 'partials/head.php'; ?>
 
     <body>
-        <header>
+        <header class="fill-viewport">
             <?php include 'partials/nav.php'; ?>
 
             <img src="assets/img/2025-logo.png" width="255" height="215" alt="4MB Jam 2025 Logo">
