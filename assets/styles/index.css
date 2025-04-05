@@ -1,0 +1,14 @@
+:root {
+    --main-background-color: black;
+    --main-foreground-color: white;
+}
+
+body {
+    background-color: var(--main-background-color);
+    color: var(--main-foreground-color);
+    font-family: sans-serif;
+}
+
+a {
+    color: var(--main-foreground-color);
+}
