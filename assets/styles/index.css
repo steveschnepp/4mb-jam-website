@@ -87,6 +87,10 @@
     background-repeat: no-repeat;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--main-background-color);
     color: var(--main-foreground-color);
