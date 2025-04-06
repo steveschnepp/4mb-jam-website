@@ -76,12 +76,12 @@
                 <p>Create a game that fits within 4MB!</p>
                 <div class="stack">
                     <a class="cta" href="#">Register</a>
-                    <a href="#">Learn More</a>
+                    <a href="#main-content">Learn More</a>
                 </div>
             </div>
         </header>
 
-        <main>
+        <main id="main-content">
             <?php
                 generateSections($mainSectionData);
             ?>
