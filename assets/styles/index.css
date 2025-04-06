@@ -113,8 +113,9 @@ h1 {
 }
 
 .whitespace-container {
-    padding-left: 5rem;
     padding-bottom: 2.25rem;
+    margin-right: 5rem;
+    padding-left: 5rem;
 }
 
 /* || SITEWIDE */
@@ -158,14 +159,37 @@ h1 {
 }
 
 .home-top-header #logo {
-    width: 34%;
+    width: 100%;
     height: auto;
     max-width: 47dvh;
 }
 
 .home-top-header h1 {
-    width: 27.7%;
     text-transform: uppercase;
+}
+
+.home-top-header .stack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home-top-header .stack > * {
+    margin-bottom: 2rem;
+}
+
+
+
+/* || CTAs (Call-to-action) */
+
+.cta {
+    border-radius: 0.5rem;
+    background-color: black;
+    border: 0.125rem solid white;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 
