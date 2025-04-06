@@ -67,14 +67,16 @@
 <?php include 'partials/head.php'; ?>
 
     <body>
-        <header class="fill-viewport">
+        <header class="fill-viewport home-top-header">
             <?php include 'partials/nav.php'; ?>
 
-            <img src="assets/img/2025-logo.png" width="255" height="215" alt="4MB Jam 2025 Logo">
-            <h1>4MB Game Jam 2025</h1>
-            <p>Create a game that fits wihtin 4MB!</p>
-            <a href="#">Register</a>
-            <a href="#">Learn More</a>
+            <div class="whitespace-container">
+                <img id="logo" src="assets/img/2025-logo.png" width="255" height="215" alt="4MB Jam 2025 Logo">
+                <h1>4MB Game Jam 2025</h1>
+                <p>Create a game that fits wihtin 4MB!</p>
+                <a href="#">Register</a>
+                <a href="#">Learn More</a>
+            </div>
         </header>
 
         <main>
