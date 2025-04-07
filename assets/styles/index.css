@@ -99,7 +99,7 @@ body {
 
 a {
     color: var(--main-foreground-color);
-    text-decoration: none;
+
 }
 
 h1 {
@@ -108,6 +108,29 @@ h1 {
     line-height: 1;
 }
 
+h2 {
+    font-size: 3rem;
+    letter-spacing: -0.06em;
+    font-weight: var(--font-weight-bold);
+}
+
+section {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+main {
+    padding-top: 2.5rem;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    text-decoration: none;
+}
 
 /* || UTILITIES */
 
@@ -150,6 +173,10 @@ h1 {
     list-style-type: none;
 }
 
+#top-nav a {
+    text-decoration: none;
+}
+
 
 /* || HOME PAGE HEADER */
 
@@ -186,7 +213,12 @@ h1 {
 
 /* || CTAs (Call-to-action) */
 
-.cta {
+.cta-primary,
+.cta-secondary {
+    text-decoration: none;
+}
+
+.cta-primary {
     border-radius: 0.5rem;
     background-color: black;
     border: 0.125rem solid white;

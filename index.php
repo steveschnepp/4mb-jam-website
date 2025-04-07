@@ -75,8 +75,8 @@
                 <h1>4MB Game Jam<br>2025</h1>
                 <p>Create a game that fits within 4MB!</p>
                 <div class="stack">
-                    <a class="cta" href="#">Register</a>
-                    <a href="#main-content">Learn More</a>
+                    <a class="cta-primary" href="#">Register</a>
+                    <a class="cta-secondary" href="#main-content">Learn More</a>
                 </div>
             </div>
         </header>
