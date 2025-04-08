@@ -81,33 +81,35 @@
             </div>
         </header>
 
-        <main id="main-content">
-            <?php
-                generateSections($mainSectionData);
-            ?>
-        </main>
+        <div class="content-stack">
+            <main id="main-content">
+                <?php
+                    generateSections($mainSectionData);
+                ?>
+            </main>
 
-        <aside>
-            <nav>
-                <header>
-                    <a href="#">Register</a>
-                    <h2>Contents</h2>
-                </header>
+            <aside class="table-of-contents">
+                <nav>
+                    <header>
+                        <a href="#">Register</a>
+                        <h2>Contents</h2>
+                    </header>
 
-                <ul>
-                    <li>
-                        <a href="#rules">Rules</a>
-                    </li>
+                    <ul>
+                        <li>
+                            <a href="#rules">Rules</a>
+                        </li>
 
-                    <li>
-                        <a href="#resources">Resources</a>
-                    </li>
+                        <li>
+                            <a href="#resources">Resources</a>
+                        </li>
 
-                    <li>
-                        <a href="#community">Community</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+                        <li>
+                            <a href="#community">Community</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
     </body>
 </html>
