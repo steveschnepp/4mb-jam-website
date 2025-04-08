@@ -81,8 +81,14 @@
             </div>
         </header>
 
-        <div class="content-stack">
-            <main id="main-content">
+        <!-- TODO Use CSS Grid between floating register bar with button, main content and table of contents -->
+
+        <div id="main-content" class="content-grid">
+            <div class="floating-action-bar">
+                 <a href="#">Register</a>
+            </div>
+
+            <main>
                 <?php
                     generateSections($mainSectionData);
                 ?>
@@ -91,7 +97,7 @@
             <aside class="table-of-contents">
                 <nav>
                     <header>
-                        <a href="#">Register</a>
+
                         <h2>Contents</h2>
                     </header>
 

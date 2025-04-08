@@ -149,9 +149,10 @@ h6 a {
     padding-left: 5rem;
 }
 
-.content-stack {
-    display: flex;
-    flex-direction: row;
+.content-grid {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 0.65fr 0.45fr;
 }
 
 /* || SITEWIDE */
@@ -238,10 +239,15 @@ h6 a {
 }
 
 
-/* Table of contents */
+.content-grid main {
+    grid-row-start: 2;
+    grid-column-start: 1
+}
 
-.table-of-contents {
-    flex: 0 0 25%;
+/* Table of contents */
+.content-grid .table-of-contents {
+    grid-row-start: 2;
+    grid-column-start: 2;
 }
 
 
