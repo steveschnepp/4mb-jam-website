@@ -216,12 +216,20 @@ h6 a {
     margin-bottom: 2rem;
 }
 
+.home-top-header .cta-primary,
+.home-top-header .cta-secondary
+{
+    font-size: 2rem;
+}
+
 
 /* || CTAs (Call-to-action) */
 
 .cta-primary,
 .cta-secondary {
     text-decoration: none;
+    font-weight: var(--font-weight-semi-bold);
+    font-size: 1.5rem;
 }
 
 .cta-primary {
@@ -271,9 +279,13 @@ h6 a {
     top: 0;
     grid-column: 1 / 3;
     text-align: right;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
+    padding-right: 2.5rem;
+}
 
+.home-content-grid .sticky-action-bar a {
+    display: inline-block;
 }
 
 .home-content-grid main {
@@ -283,21 +295,19 @@ h6 a {
 
 .home-content-grid .table-of-contents {
     position: sticky;
-    top: 2rem;
+    top: 6.5rem;
     grid-row-start: 2;
     grid-column-start: 2;
-    height: calc(100dvh - 2rem);
+    height: calc(100dvh - 6.5rem);
 }
 
 .home-content-grid .table-of-contents::before {
     content: "";
     position: absolute;
     display: block;
-    top: 1rem;
+    top: 2rem;
     bottom: 4rem;
     width: 1px;
     background: var(--logo-rainbow-color-gradient);
     left: -2.5rem;
 }
-
-
