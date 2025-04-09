@@ -223,7 +223,7 @@ h6 a {
 }
 
 
-/* || CTAs (Call-to-action) */
+/* || CTAs (CALL-TO-ACTION) */
 
 .cta-primary,
 .cta-secondary {
@@ -243,7 +243,7 @@ h6 a {
 }
 
 
-/* Table of contents */
+/* TABLE OF CONTENTS */
 .table-of-contents {
     font-size: 2rem;
 }
@@ -266,7 +266,7 @@ h6 a {
     text-decoration: none;
 }
 
-/* || Home Page Content grid */
+/* || HOME PAGE CONTENT GRID */
 
 .home-content-grid {
     display: grid;
@@ -310,4 +310,14 @@ h6 a {
     width: 1px;
     background: var(--logo-rainbow-color-gradient);
     left: -2.5rem;
+}
+
+/* || COMMUNITY GRID */
+
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 4rem);
+    grid-auto-rows: 4rem;
+    gap: 2.5rem;
+
 }
