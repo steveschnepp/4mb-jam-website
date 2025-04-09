@@ -83,7 +83,7 @@
 
         <!-- TODO Use CSS Grid between floating register bar with button, main content and table of contents -->
 
-        <div id="main-content" class="content-grid">
+        <div id="main-content" class="home-content-grid">
             <div class="sticky-action-bar">
                  <a href="#">Register</a>
             </div>
