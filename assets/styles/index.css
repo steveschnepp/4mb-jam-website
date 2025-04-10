@@ -64,10 +64,13 @@
 :root {
     --main-background-color: black;
     --main-foreground-color: white;
-    --font-weidght-regular: 400;
+    --main-foreground-hover-color: #999999;
+
+    --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semi-bold: 600;
     --font-weight-bold: 700;
+
 
     --logo-red-color: #F91F1F;
     --logo-yellow-color: #FFFF1A;
@@ -106,7 +109,10 @@ body {
 
 a {
     color: var(--main-foreground-color);
+}
 
+a:hover {
+    color: var(--main-foreground-hover-color);
 }
 
 h1 {
@@ -233,6 +239,8 @@ h6 a {
 }
 
 .cta-primary {
+    --cta-primary-hover-background-color: white;
+    --cta-primary-hover-foreground-color: black;
     border-radius: 0.5rem;
     background-color: black;
     border: 0.125rem solid white;
@@ -240,6 +248,11 @@ h6 a {
     padding-bottom: 0.75rem;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+}
+
+.cta-primary:hover {
+    background-color: var(--cta-primary-hover-background-color);
+    color: var(--cta-primary-hover-foreground-color);
 }
 
 
