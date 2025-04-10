@@ -319,5 +319,12 @@ h6 a {
     grid-template-columns: repeat(4, 4rem);
     grid-auto-rows: 4rem;
     gap: 2.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.community-grid a {
+    text-decoration: none;
 
 }
