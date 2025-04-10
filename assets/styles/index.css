@@ -79,7 +79,6 @@
 
     --logo-rainbow-color-gradient: linear-gradient(var(--logo-red-color), var(--logo-yellow-color), var(--logo-green-color), var(--logo-blue-color));
 
-    font-size: 16px;
     font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
