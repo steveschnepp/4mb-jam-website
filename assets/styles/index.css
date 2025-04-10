@@ -338,8 +338,6 @@ h6 a {
 
 /* || MEDIA QUERIES */
 
-
-
 @media (max-width: 64rem) {
     section {
         padding-right: 1.25rem;
@@ -441,7 +439,7 @@ h6 a {
 }
 
 /* TODO: Handle resolutions in horizontal orientation with a small amount of height
- *  - Handle (< 56.25rem) height when width is greater than 56.25rem;
+ *  - Handle (< 64rem) height when width is greater than 64rem;
  */
 
 
