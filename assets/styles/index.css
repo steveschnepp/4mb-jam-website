@@ -116,6 +116,7 @@ a:hover {
 }
 
 h1 {
+    font-size: 3.5em;
     font-weight: var(--font-weight-bold);
     letter-spacing: -0.08em;
     line-height: 1;
@@ -153,11 +154,8 @@ h6 a {
 }
 
 .whitespace-container {
-    padding-bottom: 2.25rem;
-    margin-right: 5rem;
     padding-left: 5rem;
 }
-
 
 /* || SITEWIDE */
 #top-nav {
@@ -200,16 +198,13 @@ h6 a {
 
 .home-top-header h1 {
     font-size: 3.5rem;
+    text-transform: uppercase;
 }
 
 .home-top-header #logo {
     width: 100%;
     height: auto;
     max-width: 47dvh;
-}
-
-.home-top-header h1 {
-    text-transform: uppercase;
 }
 
 .home-top-header .stack {
@@ -339,21 +334,107 @@ h6 a {
 
 .community-grid a {
     text-decoration: none;
-
 }
 
 /* || MEDIA QUERIES */
 
 @media (max-width: 56.25rem) {
+    section {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+
     main section > * {
         max-width: none;
+    }
+
+    /* || SITEWIDE */
+
+    #top-nav {
+        padding-top: 1rem;
+        padding-bottom: 2.25rem;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+        font-weight: var(--font-weight-medium);
+        font-size: 1rem;
+        letter-spacing: -0.08em;
+    }
+
+    #top-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    #top-nav ul li:not(:first-child) {
+        margin-left: 0.5rem;
+    }
+
+    .whitespace-container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .home-top-header {
+        font-size: 1rem;
+    }
+
+    .home-top-header h1 {
+        font-size: 2rem;
+    }
+
+    .home-top-header #logo {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        max-width: 59.30232558139535dvh;
+        max-height: 50dvh;
+    }
+
+    .home-top-header .stack {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-top-header .stack > * {
+        margin-bottom: 2rem;
+    }
+
+    .home-top-header .cta-primary,
+    .home-top-header .cta-secondary {
+        font-size: 1.5rem;
     }
 
     .home-content-grid {
         grid-template-columns: auto;
     }
 
+    .home-content-grid .sticky-action-bar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 1.25rem;
+
+    }
+
+    .home-content-grid main {
+        grid-column: 1/3;
+    }
+
     .home-content-grid .table-of-contents {
         display: none;
+        width: 0;
+        grid-column: none;
+    }
+
+    .community-grid {
+        grid-template-columns: repeat(2, 4rem);
+        grid-auto-rows: 4rem;
+        gap: 1rem;
     }
 }
+
+/* TODO: Handle mobile screens in horizontal orientation (Handle full-viewport section where there is small amount of height)  */
