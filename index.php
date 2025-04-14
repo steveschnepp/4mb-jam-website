@@ -72,8 +72,11 @@
 
             <div class="whitespace-container">
                 <img id="logo" src="assets/img/2025-logo.png" width="255" height="215" alt="4MB Jam 2025 Logo">
-                <h1>4MB Game Jam<br>2025</h1>
-                <p>Create a game that fits within 4MB!</p>
+                <div class="description">
+                    <h1>4MB Game Jam<br>2025</h1>
+                    <p>Create a game that fits within 4MB!</p>
+                </div>
+
                 <div class="stack">
                     <a class="cta-primary" href="#">Register</a>
                     <a class="cta-secondary" href="#main-content">Learn More</a>
