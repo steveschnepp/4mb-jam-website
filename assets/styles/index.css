@@ -200,9 +200,10 @@ h6 a {
 
 .home-top-header .whitespace-container {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto auto;
     flex: 1;
     padding-bottom: 2rem;
+    align-content: start;
 }
 
 .home-top-header h1 {
@@ -352,18 +353,7 @@ h6 a {
 /* || MEDIA QUERIES */
 
 
-@media (max-width: 64rem) {
-    section {
-        padding-right: 1.25rem;
-        padding-left: 1.25rem;
-    }
-
-    main section > * {
-        max-width: none;
-    }
-
-    /* || SITEWIDE */
-
+@media (max-width: 79rem) or (max-height: 63rem) {
     #top-nav {
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -408,6 +398,22 @@ h6 a {
         justify-self: flex-end;
         align-self: flex-end;
     }
+
+    .home-top-header .whitespace-container {
+        grid-template-rows: auto 1fr auto;
+        align-content: stretch;
+    }
+
+    section {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+
+    main section > * {
+        max-width: none;
+    }
+
+    /* || SITEWIDE */
 
     .home-top-header .stack > * {
         margin-bottom: 0;
@@ -492,10 +498,3 @@ h6 a {
     }
 }
 
-/* TODO: Handle resolutions in horizontal orientation with a small amount of height
- *  - Handle (<= 50rem) height when width is greater than 64rem;
- */
-
-/*@media (max-height: 50rem) {
-
-}*/
