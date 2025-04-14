@@ -406,6 +406,7 @@ h6 a {
         flex-direction: row;
         align-items: center;
         justify-self: flex-end;
+        align-self: flex-end;
     }
 
     .home-top-header .stack > * {
@@ -451,7 +452,6 @@ h6 a {
     .home-top-header .stack {
         align-items: stretch;
         text-align: center;
-        align-self: flex-end;
         justify-self: stretch;
         flex-direction: column;
     }
