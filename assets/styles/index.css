@@ -352,7 +352,6 @@ h6 a {
 
 /* || MEDIA QUERIES */
 
-
 @media (max-width: 79rem) or (max-height: 63rem) {
     #top-nav {
         padding-top: 1rem;
@@ -404,17 +403,6 @@ h6 a {
         align-content: stretch;
     }
 
-    section {
-        padding-right: 1.25rem;
-        padding-left: 1.25rem;
-    }
-
-    main section > * {
-        max-width: none;
-    }
-
-    /* || SITEWIDE */
-
     .home-top-header .stack > * {
         margin-bottom: 0;
         margin-right: 1rem;
@@ -424,6 +412,21 @@ h6 a {
     .home-top-header .cta-primary,
     .home-top-header .cta-secondary {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 79rem) {
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    section {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+
+    main section > * {
+        max-width: none;
     }
 
     .home-content-grid {
