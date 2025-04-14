@@ -439,9 +439,9 @@ h6 a {
     .home-top-header .stack {
         align-items: stretch;
         text-align: center;
+        align-self: flex-end;
     }
 }
-
 
 @media (max-width: 32rem) {
     .home-top-header #logo {
@@ -453,6 +453,21 @@ h6 a {
     }
 }
 
+
+@media (max-height: 35rem) {
+    .home-top-header .whitespace-container {
+        grid-template-rows: auto;
+        grid-template-columns: auto 1fr;
+    }
+
+    .home-top-header .description {
+        margin-left: 1rem;
+    }
+
+    .home-top-header .stack {
+        grid-column: 1/3;
+    }
+}
 
 /* TODO: Handle resolutions in horizontal orientation with a small amount of height
  *  - Handle (<= 50rem) height when width is greater than 64rem;
