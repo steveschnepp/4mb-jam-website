@@ -401,6 +401,18 @@ h6 a {
         font-size: 2rem;
     }
 
+    .home-top-header .stack {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: flex-end;
+    }
+
+    .home-top-header .stack > * {
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+
 
     .home-top-header .cta-primary,
     .home-top-header .cta-secondary {
@@ -440,6 +452,17 @@ h6 a {
         align-items: stretch;
         text-align: center;
         align-self: flex-end;
+        justify-self: stretch;
+        flex-direction: column;
+    }
+
+    .home-top-header .stack > * {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .home-top-header .stack > :last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -474,14 +497,5 @@ h6 a {
  */
 
 /*@media (max-height: 50rem) {
-    .home-top-header .stack {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
 
-    .home-top-header .stack > * {
-        margin-bottom: 0;
-        margin-right: 1rem;
-    }
 }*/
