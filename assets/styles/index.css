@@ -89,6 +89,8 @@
     --home-top-header-h1-font-size: 3.5rem;
     --home-top-header-cta-font-size: 1.5rem;
     --home-top-header-stack-item-spacing: 2rem;
+    --home-top-header-whitespace-container-rows: auto auto auto;
+    --home-top-header-whitespace-container-columns: auto;
 
     --whitespace-container-horizontal-padding: 5rem;
     --whitespace-container-vertical-padding: 2rem;
@@ -235,7 +237,8 @@ h6 a {
 
 .home-top-header .whitespace-container {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: var(--home-top-header-whitespace-container-rows);
+    grid-template-columns: var(--home-top-header-whitespace-container-columns);
     flex: 1;
     padding-bottom: var(--whitespace-container-vertical-padding);
     align-content: start;
@@ -400,6 +403,7 @@ h6 a {
         --home-top-header-h1-font-size: 2rem;
         --home-top-header-cta-font-size: 1.5rem;
         --home-top-header-stack-item-spacing: 1rem;
+        --home-top-header-whitespace-container-rows: auto 1fr auto;
     }
 
     #top-nav {
@@ -418,7 +422,6 @@ h6 a {
     }
 
     .home-top-header .whitespace-container {
-        grid-template-rows: auto 1fr auto;
         align-content: stretch;
     }
 
@@ -490,9 +493,9 @@ h6 a {
 }
 
 @media (max-height: 35rem) {
-    .home-top-header .whitespace-container {
-        grid-template-rows: auto;
-        grid-template-columns: auto 1fr;
+    :root {
+        --home-top-header-whitespace-container-rows: auto;
+        --home-top-header-whitespace-container-columns: auto 1fr;
     }
 
     .home-top-header .description {
