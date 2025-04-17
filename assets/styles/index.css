@@ -108,6 +108,9 @@
     --community-grid-row-height: 4rem;
     --community-grid-gap: 2.5rem;
 
+    --home-content-grid-rows: auto 1fr;
+    --home-content-grid-columns: auto 25rem;
+
     font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
@@ -320,8 +323,8 @@ h6 a {
 
 .home-content-grid {
     display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: auto 25rem;
+    grid-template-rows: var(--home-content-grid-rows);
+    grid-template-columns: var(--home-content-grid-columns);
 }
 
 .home-content-grid .sticky-action-bar {
@@ -431,14 +434,12 @@ h6 a {
 
         --community-grid-columns: 2;
         --community-grid-gap: 1rem;
+
+        --home-content-grid-columns: auto;
     }
 
     main section > * {
         max-width: none;
-    }
-
-    .home-content-grid {
-        grid-template-columns: auto;
     }
 
     .home-content-grid main {
