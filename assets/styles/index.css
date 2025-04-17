@@ -84,13 +84,15 @@
 
     --top-header-font-size: 2rem;
 
+    --section-padding: 2.5rem;
+
     --home-top-header-h1-font-size: 3.5rem;
     --home-top-header-cta-font-size: 1.5rem;
-
-    --section-padding: 2.5rem;
+    --home-top-header-stack-item-spacing: 2rem;
 
     --whitespace-container-horizontal-padding: 5rem;
     --whitespace-container-vertical-padding: 2rem;
+
 
     --sticky-action-bar-top-padding: 2rem;
     --sticky-action-bar-bottom-padding: 1rem;
@@ -257,7 +259,7 @@ h6 a {
 }
 
 .home-top-header .stack > * {
-    margin-bottom: 2rem;
+    margin-bottom: var(--home-top-header-stack-item-spacing);
 }
 
 .home-top-header .stack > :last-child {
@@ -397,6 +399,7 @@ h6 a {
 
         --home-top-header-h1-font-size: 2rem;
         --home-top-header-cta-font-size: 1.5rem;
+        --home-top-header-stack-item-spacing: 1rem;
     }
 
     #top-nav {
@@ -421,7 +424,7 @@ h6 a {
 
     .home-top-header .stack > * {
         margin-bottom: 0;
-        margin-right: 1rem;
+        margin-right: var(--home-top-header-stack-item-spacing);
     }
 }
 
@@ -455,6 +458,10 @@ h6 a {
 }
 
 @media (max-width: 50rem) {
+    :root {
+        --home-top-header-stack-item-spacing: 2rem;
+    }
+
     .home-top-header .stack {
         align-items: stretch;
         text-align: center;
@@ -464,7 +471,7 @@ h6 a {
 
     .home-top-header .stack > * {
         margin-right: 0;
-        margin-bottom: 2rem;
+        margin-bottom: var(--home-top-header-stack-item-spacing);
     }
 
     .home-top-header .stack > :last-child {
