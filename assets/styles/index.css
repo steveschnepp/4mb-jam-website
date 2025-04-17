@@ -17,7 +17,6 @@
  *
  */
 
-
 /* || FONTS */
 
 @font-face {
@@ -94,7 +93,6 @@
 
     --whitespace-container-horizontal-padding: 5rem;
     --whitespace-container-vertical-padding: 2rem;
-
 
     --sticky-action-bar-top-padding: 2rem;
     --sticky-action-bar-bottom-padding: 1rem;
@@ -287,6 +285,7 @@ h6 a {
 .cta-primary {
     --cta-primary-hover-background-color: white;
     --cta-primary-hover-foreground-color: black;
+
     border-radius: 0.5rem;
     background-color: black;
     border: 0.125rem solid white;
@@ -434,7 +433,9 @@ h6 a {
 @media (max-width: 79rem) {
     :root {
         --h2-font-size: 1.75rem;
+
         --section-padding: 1.25rem;
+
         --sticky-action-bar-top-padding: 1rem;
         --sticky-action-bar-bottom-padding: 1rem;
         --sticky-action-bar-right-padding: 1.25rem;
@@ -506,4 +507,3 @@ h6 a {
         grid-column: 1/3;
     }
 }
-
