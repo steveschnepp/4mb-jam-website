@@ -103,6 +103,11 @@
     --top-nav-horizontal-padding: 2.5rem;
     --top-nav-font-size: 2rem;
 
+    --community-grid-columns: 4;
+    --community-grid-column-width: 4rem;
+    --community-grid-row-height: 4rem;
+    --community-grid-gap: 2.5rem;
+
     font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
@@ -361,9 +366,9 @@ h6 a {
 
 .community-grid {
     display: grid;
-    grid-template-columns: repeat(4, 4rem);
-    grid-auto-rows: 4rem;
-    gap: 2.5rem;
+    grid-template-columns: repeat(var(--community-grid-columns), var(--community-grid-column-width));
+    grid-auto-rows: var(--community-grid-row-height);
+    gap: var(--community-grid-gap);
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -423,6 +428,9 @@ h6 a {
         --sticky-action-bar-top-padding: 1rem;
         --sticky-action-bar-bottom-padding: 1rem;
         --sticky-action-bar-right-padding: 1.25rem;
+
+        --community-grid-columns: 2;
+        --community-grid-gap: 1rem;
     }
 
     main section > * {
@@ -441,12 +449,6 @@ h6 a {
         display: none;
         width: 0;
         grid-column: none;
-    }
-
-    .community-grid {
-        grid-template-columns: repeat(2, 4rem);
-        grid-auto-rows: 4rem;
-        gap: 1rem;
     }
 }
 
@@ -477,7 +479,6 @@ h6 a {
         max-height: 50dvh;
     }
 }
-
 
 @media (max-height: 35rem) {
     .home-top-header .whitespace-container {
