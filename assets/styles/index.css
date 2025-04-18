@@ -413,6 +413,13 @@ h6 a {
     text-decoration: none;
 }
 
+.community-grid li > a {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: var(--font-weight-medium);
+}
+
 .community-grid .icon {
     fill: white;
     width: var(--community-grid-column-width);
