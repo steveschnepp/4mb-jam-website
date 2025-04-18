@@ -224,6 +224,54 @@ h6 a {
     text-decoration: none;
 }
 
+/* || CTAs (CALL-TO-ACTION) */
+
+.cta-primary,
+.cta-secondary {
+    text-decoration: none;
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--cta-font-size);
+    display: inline-flex;
+    align-items: center;
+}
+
+.cta-primary > :not(:last-child),
+.cta-secondary > :not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.cta-primary .icon,
+.cta-secondary .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.cta-primary {
+    --cta-primary-hover-background-color: white;
+    --cta-primary-hover-foreground-color: black;
+
+    border-radius: 0.5rem;
+    background-color: black;
+    border: 0.125rem solid white;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-right: 1rem;
+    padding-left: 1.5rem;
+}
+
+.cta-primary .icon {
+    fill: white;
+}
+
+.cta-primary:hover {
+    background-color: var(--cta-primary-hover-background-color);
+    color: var(--cta-primary-hover-foreground-color);
+}
+
+.cta-primary:hover .icon {
+    fill: var(--cta-primary-hover-foreground-color);
+}
+
 /* || HOME PAGE HEADER */
 
 .home-top-header {
@@ -271,55 +319,15 @@ h6 a {
 .home-top-header .cta-secondary
 {
     font-size: var(--home-top-header-cta-font-size);
+
 }
 
-/* || CTAs (CALL-TO-ACTION) */
-
-.cta-primary,
-.cta-secondary {
-    text-decoration: none;
-    font-weight: var(--font-weight-semi-bold);
-    font-size: var(--cta-font-size);
-    display: inline-flex;
-    align-items: center;
-}
-
-.cta-primary > :not(:last-child),
-.cta-secondary > :not(:last-child) {
-    margin-right: 0.5rem;
-}
-
-.cta-primary .icon,
-.cta-secondary .icon {
+.home-top-header .cta-primary .icon,
+.home-top-header .cta-secondary .icon {
     width: 2rem;
     height: 2rem;
 }
 
-.cta-primary {
-    --cta-primary-hover-background-color: white;
-    --cta-primary-hover-foreground-color: black;
-
-    border-radius: 0.5rem;
-    background-color: black;
-    border: 0.125rem solid white;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-right: 1rem;
-    padding-left: 1.5rem;
-}
-
-.cta-primary .icon {
-    fill: white;
-}
-
-.cta-primary:hover {
-    background-color: var(--cta-primary-hover-background-color);
-    color: var(--cta-primary-hover-foreground-color);
-}
-
-.cta-primary:hover .icon {
-    fill: var(--cta-primary-hover-foreground-color);
-}
 
 /* TABLE OF CONTENTS */
 .table-of-contents {
