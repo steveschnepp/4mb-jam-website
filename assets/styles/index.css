@@ -106,6 +106,8 @@
     --community-grid-column-width: 4rem;
     --community-grid-row-height: 4rem;
     --community-grid-gap: 2.5rem;
+    --community-grid-icon-width: 3rem;
+    --community-grid-icon-height: 3rem;
 
     --home-content-grid-rows: auto 1fr;
     --home-content-grid-columns: auto 25rem;
@@ -422,8 +424,12 @@ h6 a {
 
 .community-grid .icon {
     fill: white;
-    width: var(--community-grid-column-width);
-    height: var(--community-grid-row-height);
+    width: var(--community-grid-icon-width);
+    height: var(--community-grid-icon-height);
+}
+
+.community-grid a:hover .icon {
+    fill: var(--main-foreground-hover-color);
 }
 
 /* || MEDIA QUERIES */
