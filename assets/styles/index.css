@@ -295,9 +295,16 @@ h6 a {
     padding-left: 1.5rem;
 }
 
+
 .cta-primary:hover {
     background-color: var(--cta-primary-hover-background-color);
     color: var(--cta-primary-hover-foreground-color);
+}
+
+.cta-primary .icon {
+    fill: white;
+    width: 1rem;
+    height: 1rem;
 }
 
 /* TABLE OF CONTENTS */
@@ -384,6 +391,12 @@ h6 a {
 
 .community-grid a {
     text-decoration: none;
+}
+
+.community-grid .icon {
+    fill: white;
+    width: var(--community-grid-column-width);
+    height: var(--community-grid-row-height);
 }
 
 /* || MEDIA QUERIES */

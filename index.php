@@ -34,7 +34,10 @@
                 </div>
 
                 <div class="stack">
-                    <a class="cta-primary" href="#">Register</a>
+                    <a class="cta-primary" href="#">
+                        <span>Register</span>
+                        <?php render_sprite_icon('right-arrow'); ?>
+                    </a>
                     <a class="cta-secondary" href="#main-content">Learn More</a>
                 </div>
             </div>
@@ -42,7 +45,9 @@
 
         <div id="main-content" class="home-content-grid">
             <div class="sticky-action-bar">
-                 <a class="cta-primary" href="#">Register</a>
+                 <a class="cta-primary" href="#">
+                    <span>Register</span> <?php render_sprite_icon('right-arrow'); ?>
+                </a>
             </div>
 
             <main>
