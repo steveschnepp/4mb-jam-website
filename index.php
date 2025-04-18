@@ -52,7 +52,7 @@
                     [
                         'id' => 'community',
                         'content' => <<< 'HTMLQUOTE'
-                <ul>
+                <ul class="community-grid">
                     <li><a href="https://discord.gg/ge3YuJheBY">Discord</a></li>
                     <li><a href="https://mastodon.social/@4mbjam">Mastodon</a></li>
                 </ul>
@@ -64,74 +64,61 @@
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>4MB Game Jam</title>
-        <link rel="stylesheet" href="assets/styles/index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
+<?php include 'partials/head.php'; ?>
 
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
+        <header class="fill-viewport home-top-header">
+            <?php include 'partials/nav.php'; ?>
 
-                    <li>
-                        <a href="#">Rules</a>
-                    </li>
+            <div class="whitespace-container">
+                <img id="logo" src="assets/img/2025-logo.png" width="255" height="215" alt="4MB Jam 2025 Logo">
+                <div class="description">
+                    <h1>4MB Game Jam<br>2025</h1>
+                    <p>Create a game that fits within 4MB!</p>
+                </div>
 
-                    <li>
-                        <a href="#">Resources</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Community</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Archive</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <img src="assets/img/2025-logo.png" width="255" height="215" alt="4MB Jam 2025 Logo">
-            <h1>4MB Game Jam 2025</h1>
-            <p>Create a game that fits wihtin 4MB!</p>
-            <a href="#">Register</a>
-            <a href="#">Learn More</a>
+                <div class="stack">
+                    <a class="cta-primary" href="#">Register</a>
+                    <a class="cta-secondary" href="#main-content">Learn More</a>
+                </div>
+            </div>
         </header>
 
-        <main>
-            <?php
-                generateSections($mainSectionData);
-            ?>
-        </main>
+        <!-- TODO Use CSS Grid between floating register bar with button, main content and table of contents -->
 
-        <aside>
-            <nav>
-                <header>
-                    <a href="#">Register</a>
-                    <h2>Contents</h2>
-                </header>
+        <div id="main-content" class="home-content-grid">
+            <div class="sticky-action-bar">
+                 <a class="cta-primary" href="#">Register</a>
+            </div>
 
-                <ul>
-                    <li>
-                        <a href="#rules">Rules</a>
-                    </li>
+            <main>
+                <?php
+                    generateSections($mainSectionData);
+                ?>
+            </main>
 
-                    <li>
-                        <a href="#resources">Resources</a>
-                    </li>
+            <aside class="table-of-contents">
+                <nav>
+                    <header>
 
-                    <li>
-                        <a href="#community">Community</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+                        <h2>Contents</h2>
+                    </header>
+
+                    <ul>
+                        <li>
+                            <a href="#rules">Rules</a>
+                        </li>
+
+                        <li>
+                            <a href="#resources">Resources</a>
+                        </li>
+
+                        <li>
+                            <a href="#community">Community</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
     </body>
 </html>
