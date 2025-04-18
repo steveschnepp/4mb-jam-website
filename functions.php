@@ -19,3 +19,14 @@ function get_include_contents($filename) {
 
     return false;
 }
+
+function make_static_path($pathname) {
+    return $_SERVER['DOCUMENT_ROOT'] . $pathname;
+}
+
+function render_sprite_icon($name, $label = "", $aria_hidden = true) {
+    $spritemap_path = make_static_path("/assets/icons/spritemap.svg#sprite-$name");
+    echo "<svg " . ($aria_hidden ? "aria-hidden='true' " : '') . ($label ? "aria-label='$label' ": '') . "class='icon'>";
+    echo "<use href='$spritemap_path'></use>";
+    echo '</svg>';
+}
