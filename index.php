@@ -1,31 +1,23 @@
 <?php
     include_once 'functions.php';
     include_once 'templates/section.php';
+
     $mainSectionData = [
         'items' => [
             [
                 'id' => 'rules',
                 'content' => get_include_contents('partials/home/rules.php')
-                    ],
-                    [
-                        'id' => 'resources',
-                        'content' => <<< 'HTMLQUOTE'
-                <p>Check out the <a href="#">Resources</a> section for guidance on ways of making games that take up as little storage space as possible!</p>
-            HTMLQUOTE
-                    ],
-                    [
-                        'id' => 'community',
-                        'content' => <<< 'HTMLQUOTE'
-                <ul class="community-grid">
-                    <li><a href="https://discord.gg/ge3YuJheBY">Discord</a></li>
-                    <li><a href="https://mastodon.social/@4mbjam">Mastodon</a></li>
-                </ul>
-            HTMLQUOTE
-                    ]
+            ],
+            [
+                'id' => 'resources',
+                'content' => get_include_contents('partials/home/resources.php')
+            ],
+            [
+                'id' => 'community',
+                'content' => get_include_contents('partials/home/community.php')
             ]
+        ]
     ];
-
-
 ?>
 
 <?php include 'partials/head.php'; ?>
