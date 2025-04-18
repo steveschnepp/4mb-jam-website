@@ -38,7 +38,10 @@
                         <span>Register</span>
                         <?php render_sprite_icon('right-arrow'); ?>
                     </a>
-                    <a class="cta-secondary" href="#main-content">Learn More</a>
+                    <a class="cta-secondary" href="#main-content">
+                        <span>Learn More</span>
+                        <?php render_sprite_icon('down-arrow') ?>
+                    </a>
                 </div>
             </div>
         </header>
