@@ -280,6 +280,19 @@ h6 a {
     text-decoration: none;
     font-weight: var(--font-weight-semi-bold);
     font-size: var(--cta-font-size);
+    display: inline-flex;
+    align-items: center;
+}
+
+.cta-primary > :not(:last-child),
+.cta-secondary > :not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.cta-primary .icon,
+.cta-secondary .icon {
+    width: 2rem;
+    height: 2rem;
 }
 
 .cta-primary {
@@ -291,20 +304,21 @@ h6 a {
     border: 0.125rem solid white;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    padding-right: 1.5rem;
+    padding-right: 1rem;
     padding-left: 1.5rem;
 }
 
+.cta-primary .icon {
+    fill: white;
+}
 
 .cta-primary:hover {
     background-color: var(--cta-primary-hover-background-color);
     color: var(--cta-primary-hover-foreground-color);
 }
 
-.cta-primary .icon {
-    fill: white;
-    width: 1rem;
-    height: 1rem;
+.cta-primary:hover .icon {
+    fill: var(--cta-primary-hover-foreground-color);
 }
 
 /* TABLE OF CONTENTS */
@@ -347,10 +361,6 @@ h6 a {
     padding-top: var(--sticky-action-bar-top-padding);
     padding-bottom: var(--sticky-action-bar-bottom-padding);
     padding-right: var(--sticky-action-bar-right-padding);
-}
-
-.home-content-grid .sticky-action-bar a {
-    display: inline-block;
 }
 
 .home-content-grid main {
