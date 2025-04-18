@@ -504,6 +504,11 @@ h6 a {
     .home-top-header .stack > :last-child {
         margin-bottom: 0;
     }
+    .home-top-header .cta-primary,
+    .home-top-header .cta-secondary {
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 32rem) {
