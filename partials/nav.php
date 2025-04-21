@@ -5,7 +5,7 @@
         </li>
 
         <li>
-            <a href="#">About Us</a>
+            <a href="/about-us.php">About Us</a>
         </li>
 
         <li>
@@ -13,7 +13,7 @@
         </li>
 
         <li>
-            <a href="#">Resources</a>
+            <a href="/resources.php">Resources</a>
         </li>
 
         <li>
@@ -21,7 +21,7 @@
         </li>
 
         <li>
-            <a href="#">Archive</a>
+            <a href="/archive.php">Archive</a>
         </li>
     </ul>
 </nav>
