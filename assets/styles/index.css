@@ -135,12 +135,16 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: var(--main-background-color);
     color: var(--main-foreground-color);
     margin: 0;
+    height: 100%;
 }
 
 a {
@@ -193,6 +197,15 @@ h6 a {
     padding-left: var(--whitespace-container-horizontal-padding);
     padding-right: var(--whitespace-container-horizontal-padding);
 }
+
+.centre-fill {
+    flex: 1;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
 
 /* || SITEWIDE */
 #top-nav {
@@ -355,6 +368,16 @@ h6 a {
 
 .table-of-contents a {
     text-decoration: none;
+}
+
+/* || FULL PAGE MESSAGE */
+
+.full-page-message p {
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.full-page-message a {
+    margin-top: 1rem;
 }
 
 /* || HOME PAGE CONTENT GRID */

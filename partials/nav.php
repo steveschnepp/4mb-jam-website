@@ -1,6 +1,10 @@
 <nav id="top-nav">
     <ul>
         <li>
+            <a href="/">Home</a>
+        </li>
+
+        <li>
             <a href="#">About Us</a>
         </li>
 
@@ -13,7 +17,7 @@
         </li>
 
         <li>
-            <a href="#">Community</a>
+            <a href="/community.php">Community</a>
         </li>
 
         <li>
