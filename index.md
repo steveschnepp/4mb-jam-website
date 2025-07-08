@@ -1,4 +1,4 @@
----
+j---
 layout: home
 ---
 ![4MB Jam 2025 Logo](assets/img/2025-logo.png)
@@ -15,6 +15,6 @@ Register
 Learn More
 {: .cta-secondary }
 
-[Rules](rules)
-[Resources](resources)
-[Community](community)
+[Rules](rules.html)
+[Resources](resources.html)
+[Community](community.html)
